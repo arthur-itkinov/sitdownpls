@@ -1,0 +1,317 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.categories-section {
+  padding-top: 70px;
+}
+.categories {
+  &__heading {
+    margin-bottom: 22px;
+  }
+
+  &__table {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+  }
+  &__item {
+    position: relative;
+    overflow: hidden;
+  }
+  &__item_c6 {
+    min-height: 511px;
+  }
+  &__item_c4 {
+    min-height: 405px;
+  }
+  &__item_sofas::before {
+    content: '';
+    position: absolute;
+    top: 24%;
+    left: 0;
+    height: 308px;
+    width: 100%;
+    background: left / contain no-repeat url("@img/sofa-category.png");
+  }
+  &__item_armchairs::before {
+    content: '';
+    position: absolute;
+    top: 24%;
+    left: 0;
+    height: 308px;
+    width: 100%;
+    background: left / contain no-repeat url("@img/armchairs-category.png");
+  }
+  &__item_beds::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 202px;
+    width: 100%;
+    background: left / contain no-repeat url("@img/beds-category.png");
+  }
+  &__item_dresser::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 202px;
+    width: 100%;
+    background: left / contain no-repeat url("@img/dresser-category.png");
+  }
+  &__item_chairs::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 202px;
+    width: 100%;
+    background: left / contain no-repeat url("@img/chairs-category.png");
+  }
+}
+
+.img {
+  overflow: hidden;
+}
+.category-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0 30px;
+  background-color: $grey-light;
+  border-radius: 10px;
+  &__subcategories {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 4px;
+    margin-bottom: 16px;
+    padding: 0 20px 0 30px;
+  }
+
+  &__subcategory {
+    font-size: 14px;
+    color: $grey;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+  }
+  &__subcategory:hover {
+    color: rgb(178, 178, 178);
+  }
+  &__subcategory:focus {
+    color: $grey-shade;
+    outline: none;
+  }
+  &__subcategory:active {
+    color: $grey-shade;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    padding: 0 20px 0 30px;
+    font-size: 24px;
+  }
+
+  &__title-link {
+    display: none;
+    align-items: center;
+    padding: 0 27px 0 16px;
+    width: fit-content;
+    height: 22px;
+    color: $black;
+    background: right / contain no-repeat url("@img/icons/arrow.svg");
+    transition-property: background;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+  }
+}
+
+.category-item__title-link:hover {
+  background: right / contain no-repeat url("@img/icons/arrow_hover.svg");
+}
+.category-item__title-link:focus {
+  background: right / contain no-repeat url("@img/icons/arrow_focus.svg");
+  outline: none;
+}
+.category-item__title-link:active {
+  background: right / contain no-repeat url("@img/icons/arrow_active.svg");
+}
+
+.category-item__title-link_1 {
+  max-width: none;
+  font-size: 24px;
+}
+
+@media (max-width: $s1152) {
+  .categories {
+    &__table {
+      grid-template-columns: repeat(9, 1fr);
+    }
+    &__item_sofas::before {
+      top: 24%;
+    }
+    &__item_armchairs::before {
+      top: 25%;
+      margin-left: -238px;
+      height: 296px;
+      width: 497px;
+    }
+    &__item_beds::before {
+      top: 25%;
+      height: 296px;
+      background-size: cover;
+    }
+    &__item_dresser::before {
+      top: 25%;
+      margin-left: -233px;
+      height: 296px;
+      width: 497px;
+    }
+    &__item_chairs::before {
+      top: 25%;
+      margin-left: -115px;
+      height: 296px;
+      width: 497px;
+    }
+  }
+  .categories__item:nth-child(2) {
+    order: 3;
+  }
+  .categories__item:nth-child(5) {
+    order: 5;
+  }
+}
+
+@media (max-width: $s900) {
+  .categories {
+    &__table {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    &__item {
+      min-height: 511px;
+    }
+  }
+  .categories__item:nth-child(2) {
+    order: 3;
+  }
+  .categories__item:nth-child(4) {
+    order: 5;
+  }
+}
+
+@media (max-width: $s540) {
+  .categories {
+    &__item_sofas::before {
+      top: 31%;
+      margin-left: -51px;
+      width: 354px;
+      height: 212px;
+    }
+    &__item_armchairs::before {
+      top: 40%;
+      margin-left: -8px;
+      height: 104px;
+      width: 158px;
+    }
+    &__item_beds::before {
+      top: 40%;
+      height: 104px;
+      width: 157px;
+      background-size: contain;
+    }
+    &__item_dresser::before {
+      top: 50%;
+      margin-left: 0;
+      height: 87px;
+      width: 142px;
+    }
+    &__item_chairs::before {
+      margin-left: 0;
+      top: 42%;
+      height: 104px;
+      width: 140px;
+      background: center / contain no-repeat url("@img/chairs-category_320.png");
+    }
+  }
+  .categories__heading {
+    font-size: 24px;
+  }
+  .category-item {
+    padding: 16px 0 16px 0;
+    min-height: 206px;
+  }
+
+  .categories__item:nth-child(1) {
+    padding: 28px 0 16px 0;
+  }
+
+  .category-item__link {
+    display: none;
+  }
+  .categories__table {
+    column-gap: 16px;
+    row-gap: 32px;
+  }
+  .category-item__subcategories {
+    flex-direction: column;
+    margin-bottom: 8px;
+    padding: 0 16px 0 16px;
+    row-gap: 1px;
+  }
+  .category-item__title {
+    margin-bottom: 16px;
+    padding: 0 16px 0 16px;
+  }
+  .category-item__subcategory {
+    font-size: 10px;
+  }
+  .category-item__title {
+    display: none;
+  }
+  .category-item__title-link {
+    font-size: 16px;
+  }
+  .categories__item:nth-child(1) {
+    min-height: 332px;
+  }
+  .category-item__subcategories_1 {
+    flex-direction: row;
+    column-gap: 20px;
+    margin-bottom: 20px;
+    padding: 0 16px 0 31px;
+  }
+  .category-item__title-link_1 {
+    padding: 0 28px 0 30px;
+    font-size: 24px;
+  }
+  .category-item__subcategory_1 {
+    font-size: 14px;
+  }
+  .category-armchairs-img {
+    margin-left: 0;
+  }
+  .category-dresser-img {
+    margin-left: 0;
+  }
+  .category-chairs-img {
+    margin-left: 0;
+  }
+  .category-item__title-link {
+    display: flex;
+  }
+}
+@media (max-width: $s384) {
+  .categories {
+    &__item_dresser::before {
+      background: center / contain no-repeat url("@img/dresser-category_320.png");
+    }
+  }
+  .category-beds-img {
+    background-size: cover;
+  }
+  .category-item__subcategories_dresser {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,158 @@
+.cooperation-container {
+  padding-top: 23px;
+  padding-bottom: 70px;
+}
+
+.cooperation {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 36px;
+
+  &__main-heading {
+    grid-column: 1/ span 3;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  &__section {
+    grid-column: 1 / span 8;
+  }
+
+  &__heading {
+    margin-bottom: 18px;
+    font-size: 24px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 29px;
+    color: $grey-shade;
+  }
+  &__text_get {
+    line-height: 24px;
+  }
+}
+.get-item-1 {
+  background: top left / contain no-repeat url("@img/icons/network.svg");
+}
+.get-item-2 {
+  background: top left / contain no-repeat url("@img/icons/briefcase.svg");
+}
+.get-item-3 {
+  background: top left / contain no-repeat url("@img/icons/git-pull-request.svg");
+}
+.get-section {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  &__item {
+    padding-left: 37px;
+    max-width: 625px;
+    background-size: auto;
+  }
+}
+
+.advantages-section {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  &__heading {
+    margin-bottom: 17px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $secodary;
+  }
+}
+.guarantees-section {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 31px;
+    padding-inline-start: 17px;
+  }
+
+  &__item::marker {
+    float: left;
+    font-size: 16px;
+    color: $secodary;
+  }
+
+  &__item {
+    padding-left: 10px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    height: 116px;
+    background: left / contain no-repeat url("@img/pencil.jpg");
+  }
+
+  &__bottom-text {
+    padding-left: 107px;
+    max-width: 622px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: $s1152) {
+  .cooperation {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+@media (max-width: $s900) {
+  .cooperation {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .cooperation__section {
+    grid-column: 1 / span 6;
+  }
+}
+@media (max-width: $s540) {
+  .cooperation-container {
+    padding-top: 33px;
+  }
+  .cooperation__main-heading {
+    font-size: 24px;
+  }
+  .cooperation__heading {
+    margin-bottom: 14px;
+  }
+  .cooperation__heading {
+    font-size: 16px;
+  }
+  .cooperation__text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .cooperation__text_get {
+    line-height: 21px;
+  }
+
+  .cooperation__heading_advantages {
+    font-size: 14px;
+  }
+  .guarantees-section__bottom-text {
+    padding-left: 52px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 240px;
+  }
+  .guarantees-section__list {
+    margin-bottom: 34px;
+  }
+  .guarantees-section__bottom {
+    height: 71px;
+    background: left / auto no-repeat url("@img/pencil_320.jpg");
+  }
+}

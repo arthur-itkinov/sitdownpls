@@ -1,0 +1,118 @@
+@import "variables.scss";
+
+@mixin after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin imgContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+@mixin imgAdaptive {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+@mixin flexBase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin gridTwoCol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin backgroundImage {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin buttonNull {
+  padding: 0;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  cursor: pointer;
+  appearance: none;
+}
+
+@mixin textOverflow {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin searchContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+@mixin menuDropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0;
+  transform: translateX(-600px);
+  z-index: 1;
+}
+
+@mixin primaryBtn {
+  width: fit-content;
+  font-size: 16px;
+  color: $white;
+  background-color: $primary;
+  border: 2px solid $primary;
+  border-radius: 10px;
+}
+@mixin secondaryBtn {
+  width: fit-content;
+  font-size: 16px;
+  color: $primary;
+  background-color: transparent;
+  border: 2px solid $primary;
+  border-radius: 10px;
+}
+
+@mixin selectJqNull {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  width: fit-content;
+  color: $primary;
+  font-family: inherit;
+}

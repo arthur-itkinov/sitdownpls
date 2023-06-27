@@ -1,0 +1,216 @@
+<div class="filter-selects">
+  <h3 class="filter-selects__heading heading-third">
+    Фильтры:
+  </h3>
+  <form class="filter-selects__form filter-selects-form" method="get">
+    <fieldset class="filter-selects-form__block">
+      <button class="filter-selects-form__select-button btn-null" type="button" aria-label="Категория">
+        <span class="filter-selects-form__select-text">Категория</span>
+        <span class="filter-selects-form__select-arrow"></span>
+      </button>
+      <ul class="filter-selects-form__check-list check-list slide-in-blurred-top filter-selectmenu-open ul-class">
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="1" aria-label="Диваны">
+            <span class="check-list__desc">
+              Диваны
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="2" aria-label="Кресла">
+            <span class="check-list__desc">
+              Кресла
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="3" aria-label="Пуфы">
+            <span class="check-list__desc">
+              Пуфы
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="4" aria-label="Кровати">
+            <span class="check-list__desc">
+              Кровати
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="5" aria-label="Тумбы">
+            <span class="check-list__desc">
+              Тумбы
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="6" aria-label="Комоды">
+            <span class="check-list__desc">
+              Комоды
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="7" aria-label="Стулья">
+            <span class="check-list__desc">
+              Стулья
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="8" aria-label="Столы">
+            <span class="check-list__desc">
+              Столы
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+        <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="9" aria-label="Аксессуары">
+            <span class="check-list__desc">
+              Аксессуары
+            </span>
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="filter-selects-form__block">
+      <button class="filter-selects-form__select-button btn-null" type="button" aria-label="Цена">
+        <span class="filter-selects-form__select-text">Цена</span>
+        <span class="filter-selects-form__select-arrow"></span>
+      </button>
+      <div class="filter-form__price-inputs slide-in-blurred-top filter-selectmenu-open">
+        <div class="filter-form__price-input">
+          <label class="check-list__label" for="select-form-amount-from">от</label>
+          <input class="check-list__input" id="select-form-amount-from" type="text" placeholder="2000" aria-label="Цена от">
+        </div>
+        <div class="filter-form__price-input">
+          <label class="check-list__label" for="select-form-amount-to">до</label>
+          <input class="check-list__input" id="select-form-amount-to" type="text" placeholder="150000" aria-label="Цена до">
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="filter-selects-form__block">
+      <button class="filter-selects-form__select-button btn-null" type="button" aria-label="Скидка">
+        <span class="filter-selects-form__select-text">Скидка</span>
+        <span class="filter-selects-form__select-arrow"></span>        
+      </button>
+      <ul class="filter-form__check-list check-list slide-in-blurred-top filter-selectmenu-open ul-class">
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="1" aria-label="Более 5 000">
+            <span class="check-list__desc">
+              Более 5 000
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="2" aria-label="Менее 5 000">
+            <span class="check-list__desc">
+              Менее 5 000
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="3" aria-label="Неважно">
+            <span class="check-list__desc">
+              Неважно
+            </span>
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="filter-selects-form__block">
+      <button class="filter-selects-form__select-button btn-null" type="button" aria-label="Цвет">
+        <span class="filter-selects-form__select-text">Цвет</span>
+        <span class="filter-selects-form__select-arrow"></span>
+      </button>
+      <ul class="filter-form__check-list check-list slide-in-blurred-top filter-selectmenu-open ul-class">
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="1" aria-label="Коричневый">
+            <span class="check-list__desc">
+              Коричневый
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="1" aria-label="Черный">
+            <span class="check-list__desc">
+              Черный
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="2" aria-label="Бежевый">
+            <span class="check-list__desc">
+              Бежевый
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="3" aria-label="Серый">
+            <span class="check-list__desc">
+              Серый
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="4" aria-label="Белый">
+            <span class="check-list__desc">
+              Белый
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="5" aria-label="Синий">
+            <span class="check-list__desc">
+              Синий
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="6" aria-label="Оранжевый">
+            <span class="check-list__desc">
+              Оранжевый
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="7" aria-label="Желтый">
+            <span class="check-list__desc">
+              Желтый
+            </span>
+          </label>
+        </li>
+        <li class="check-list__item">
+          <label class="check-list__label">
+            <input class="check-list__check" type="checkbox" name="category" value="8" aria-label="Зеленый">
+            <span class="check-list__desc">
+              Зеленый
+            </span>
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+  
+</div>

@@ -1,0 +1,104 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.banner-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  &__container {
+    display: none;
+  }
+  &__button {
+    padding: 21px 0 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  background: center / cover no-repeat url("@img/banner.jpg");
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 31px;
+    padding-bottom: 15px;
+  }
+  &__title {
+    max-width: 508px;
+    font-size: 48px;
+    line-height: 57px;
+    color: $white;
+  }
+  &__span {
+    font-family: PlayfairDisplay, "Times New Roman", Times, serif;
+    font-size: 60px;
+    color: $gold;
+  }
+
+  &__button {
+    padding: 16px 31px 21px 31px;
+  }
+}
+
+@media (max-width: $s1152) {
+  .banner {
+    background: center / cover no-repeat url("@img/banner_1024.jpg");
+  }
+  .banner-container {
+    padding: 0 36px 0 36px;
+  }
+}
+@media (max-width: $s900) {
+  .banner {
+    background: center / cover no-repeat url("@img/banner_768.jpg");
+  }
+}
+@media (max-width: $s540) {
+  .banner-section {
+    &__container {
+      display: flex;
+    }
+  }
+  .banner {
+    min-height: 350px;
+    &__title {
+      max-width: 508px;
+      font-size: 30px;
+      line-height: 32px;
+    }
+    &__span {
+      font-size: 36px;
+    }
+    &__button {
+      display: none;
+    }
+  }
+}
+@media (max-width: $s384) {
+  .banner {
+    align-items: flex-start;
+    min-height: 210px;
+    background: center / cover no-repeat url("@img/banner_320.jpg");
+    &__content {
+      padding-top: 34px;
+    }
+    &__title {
+      max-width: 187px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    &__span {
+      font-size: 24px;
+    }
+  }
+  .banner-container {
+    padding: 0 12px 0 12px;
+  }
+  .banner-section__button {
+    padding: 21px 0 18px 0;
+  }
+}

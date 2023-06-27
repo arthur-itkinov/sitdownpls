@@ -1,0 +1,198 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-top: 32px;
+  &__container {
+    display: none;
+    width: 100%;
+  }
+  &__button {
+    display: none;
+    padding: 22px 0 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+.hero-swiper {
+  position: relative;
+  &__item-1 {
+    background: center / cover no-repeat url("@img/hero-img-1.jpg");
+  }
+  &__item-2 {
+    background: center / cover no-repeat url("@img/hero-img-2.jpg");
+  }
+  &__item-3 {
+    background: center / cover no-repeat url("@img/hero-img-3.jpg");
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 76px;
+  }
+
+  &__heading {
+    margin: 0;
+    max-width: 496px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65px;
+    color: $grey;
+    word-wrap: break-word;
+  }
+  &__heading_3 {
+    max-width: 587px;
+    color: $white;
+  }
+
+  &__button {
+    padding: 21px 48px 20px 49px;
+  }
+}
+
+.hero-swiper .slick-dots {
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -37px;
+  padding: 0;
+  bottom: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.hero-swiper .slick-dots li {
+  list-style: none;
+}
+.hero-swiper .slick-dots li.slick-active button {
+  opacity: 1;
+}
+.hero-swiper .slick-dots li button {
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  background-color: $black;
+  opacity: 0.3;
+  border-radius: 50%;
+  border: 0;
+  font-size: 0;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+@media (max-width: $s1152) {
+  .hero-swiper {
+    &__item-1 {
+      background-image: url("@img/hero-img-1_1024.jpg");
+    }
+    &__item-2 {
+      background-image: url("@img/hero-img-2_1024.jpg");
+    }
+    &__item-3 {
+      background-image: url("@img/hero-img-3_1024.jpg");
+    }
+  }
+}
+
+@media (max-width: $s900) {
+  .hero-swiper {
+    &__item-1 {
+      background-image: url("@img/hero-img-1_768.jpg");
+    }
+    &__item-2 {
+      background-image: url("@img/hero-img-2_768.jpg");
+    }
+    &__item-3 {
+      background-image: url("@img/hero-img-3_768.jpg");
+    }
+    &__button {
+      padding: 22px 50px 22px 50px;
+    }
+    &__content {
+      padding-bottom: 76px;
+    }
+  }
+}
+@media (max-width: $s640) {
+  .hero-swiper {
+    height: 300px;
+    &__content {
+      padding-top: 40px;
+      row-gap: 20px;
+    }
+    &__heading {
+      font-size: 36px;
+      line-height: 45px;
+    }
+    &__button {
+      padding: 14px 40px 14px 40px;
+      font-size: 14px;
+    }
+  }
+  .hero-swiper .slick-dots {
+    margin: 0 0 0 -9px;
+    bottom: 15px;
+    gap: 10px;
+  }
+  .hero-swiper .slick-dots li button {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: $s540) {
+  .hero-section {
+    &__container {
+      display: block;
+    }
+    &__button {
+      display: block;
+    }
+  }
+  .hero-swiper {
+    height: 210px;
+    &__content {
+      padding: 30px 0 0 18px;
+    }
+    &__heading {
+      font-size: 20px;
+      line-height: 27px;
+    }
+    &__button {
+      display: none;
+    }
+  }
+  .hero-swiper .slick-dots {
+    margin: 0 0 0 -17px;
+    bottom: 8px;
+    gap: 8px;
+  }
+  .hero-swiper .slick-dots li button {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: $s384) {
+  .hero-swiper {
+    &__item-1 {
+      background-image: url("@img/hero-img-1_320.jpg");
+    }
+    &__item-2 {
+      background-image: url("@img/hero-img-2_320.jpg");
+    }
+    &__item-3 {
+      background-image: url("@img/hero-img-3_320.jpg");
+    }
+    &__heading {
+      max-width: 225px;
+    }
+  }
+}

@@ -1,0 +1,3 @@
+$(function () {
+  $(".catalog-pages").tabs();
+});

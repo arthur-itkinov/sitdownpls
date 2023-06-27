@@ -1,0 +1,121 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.usefull-section {
+  padding: 70px 0 0 0;
+}
+.usefull {
+  &__top {
+    margin-bottom: 22px;
+  }
+
+  &__pagination-bottom {
+    display: none;
+    justify-content: center;
+  }
+}
+.usefull-top {
+  &__container {
+    @include flexBase;
+  }
+}
+
+.usefull-swiper {
+  &__item {
+    grid-column-end: span 6;
+  }
+}
+.usefull-item {
+  display: flex;
+  flex-direction: column;
+  background-color: $grey-light;
+  border-radius: 10px;
+  height: initial;
+  &__img {
+    min-height: 426px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 30px 30px 30px;
+    height: 100%;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 38px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  &__button {
+    padding: 17px 34px 14px 33px;
+  }
+}
+
+.usefull-item__img_1 {
+  background: center / cover no-repeat url("@img/usefull-1.png");
+}
+
+.usefull-item__img_2 {
+  background: center / cover no-repeat url("@img/usefull-2.png");
+}
+
+.usefull-item__img_3 {
+  background: center / cover no-repeat url("@img/usefull-3.png");
+}
+
+.usefull-item__img_4 {
+  background: center / cover no-repeat url("@img/usefull-4.png");
+}
+
+.usefull-item__img_5 {
+  background: center / cover no-repeat url("@img/usefull-5.png");
+}
+
+.usefull-swiper .slick-track {
+  gap: 32px;
+}
+
+@media (max-width: $s1152) {
+  .usefull-item__img {
+    min-height: 202px;
+  }
+  .usefull-item__text {
+    margin-bottom: 30px;
+    max-width: 236px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media (max-width: $s900) {
+  .usefull-item__text {
+    max-width: none;
+  }
+}
+@media (max-width: $s540) {
+  .usefull-section {
+    padding: 78px 0 0 0;
+  }
+  .usefull__heading {
+    font-size: 24px;
+  }
+  .usefull__swiper {
+    margin-bottom: 16px;
+  }
+  .usefull__pagination-top {
+    display: none;
+  }
+  .usefull__pagination-bottom {
+    display: flex;
+  }
+}
+@media (max-width: $s384) {
+  .usefull-item__text {
+    max-width: 230px;
+  }
+}

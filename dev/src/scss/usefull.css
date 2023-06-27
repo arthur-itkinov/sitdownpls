@@ -1,0 +1,113 @@
+.usefull-section {
+  padding: 70px 0 0 0;
+}
+
+.usefull__top {
+  margin-bottom: 22px;
+}
+.usefull__pagination-bottom {
+  display: none;
+  justify-content: center;
+}
+
+.usefull-top__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usefull-swiper__item {
+  grid-column-end: span 6;
+}
+
+.usefull-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  height: initial;
+}
+.usefull-item__img {
+  min-height: 426px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.usefull-item__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 30px 30px 30px;
+  height: 100%;
+}
+.usefull-item__text {
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 24px;
+  line-height: 33px;
+}
+.usefull-item__button {
+  padding: 17px 34px 14px 33px;
+}
+
+.usefull-item__img_1 {
+  background: center/cover no-repeat url("@img/usefull-1.png");
+}
+
+.usefull-item__img_2 {
+  background: center/cover no-repeat url("@img/usefull-2.png");
+}
+
+.usefull-item__img_3 {
+  background: center/cover no-repeat url("@img/usefull-3.png");
+}
+
+.usefull-item__img_4 {
+  background: center/cover no-repeat url("@img/usefull-4.png");
+}
+
+.usefull-item__img_5 {
+  background: center/cover no-repeat url("@img/usefull-5.png");
+}
+
+.usefull-swiper .slick-track {
+  gap: 32px;
+}
+
+@media (max-width: 1153px) {
+  .usefull-item__img {
+    min-height: 202px;
+  }
+  .usefull-item__text {
+    margin-bottom: 30px;
+    max-width: 236px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 901px) {
+  .usefull-item__text {
+    max-width: none;
+  }
+}
+@media (max-width: 541px) {
+  .usefull-section {
+    padding: 78px 0 0 0;
+  }
+  .usefull__heading {
+    font-size: 24px;
+  }
+  .usefull__swiper {
+    margin-bottom: 16px;
+  }
+  .usefull__pagination-top {
+    display: none;
+  }
+  .usefull__pagination-bottom {
+    display: flex;
+  }
+}
+@media (max-width: 385px) {
+  .usefull-item__text {
+    max-width: 230px;
+  }
+}/*# sourceMappingURL=usefull.css.map */

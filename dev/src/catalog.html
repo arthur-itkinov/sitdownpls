@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"SitDownPls catalog"
+})
+
+<body>
+  @@include('html/header.html', {})
+  <main>
+    <div class="container">
+      <div class="catalog-container">
+        <div class="breadcrumbs catalog-container__breadcrumbs">
+          <ul class="breadcrumbs__list ul-class">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link router-link-active" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link router-link-active" href="#">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link router-link-active" href="#">Диваны</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link">Прямые диваны</a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog">
+          @@include('html/filter.html', {})
+          @@include('html/catalog-table.html', {})
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include('html/footer.html', {})
+  @@include('html/scripts.html', {})
+</body>
+
+</html>

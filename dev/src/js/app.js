@@ -1,0 +1,12 @@
+import "./modules/is-webp.js";
+import './modules/just-validate.min.js';
+import './modules/slick.min.js';
+import './modules/select.js';
+import './modules/menu.js';
+import './modules/show-more.js';
+import './modules/tabs.js';
+import './modules/select-filter.js';
+import './modules/slider.js';
+import './modules/swiper.js';
+import './modules/popup.js';
+import './modules/validation.js';
